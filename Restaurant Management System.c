@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <conio.h>
 
-
 //**@  Md Sarafat Alam Mozumder
 //**@  Sadia Islam Dia
 
@@ -34,7 +33,6 @@ main()
     sleep(3);
     menu();
 }
-
 
 void menu()
 {
@@ -72,8 +70,6 @@ void menu()
     printf("\n\nPlease Select Your Option from the Menu : ");
     scanf("%d",&x);
 
-
-
     switch(x)
     {
     case 1: lunchdinner();
@@ -103,16 +99,11 @@ void menu()
     case 9: exit(0);
 
     default: printf("Invalid Error!\n");
-
     }
-
 }
 
 float lunchdinner()
 {
-
-
-
     printf("You have selected Lunch/Dinner Set.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -126,18 +117,12 @@ float lunchdinner()
     {   system("cls");                                  //clear screen.
         {menu();}
     }
-
     else
     {total();}
-
-
 }
 
 float breakfast()
 {
-
-
-
     printf("You have selected Breakfast Set.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -153,16 +138,10 @@ float breakfast()
     }
     else
     {total();}
-
-
-
-
-
 }
+
 float kid()
 {
-
-
     printf("You have selected Kiddies Set.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -178,15 +157,10 @@ float kid()
     }
     else
     {total();}
-
-
-
-
 }
+
 float promotion()
 {
-
-
     printf("You have selected Promotion.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -209,8 +183,6 @@ float promotion()
 }
 float drink()
 {
-
-
     printf("You have selected to order Drink.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -226,15 +198,10 @@ float drink()
     }
     else
     {total();}
-
-
-
-
 }
+
 float frenchfries()
 {
-
-
     printf("You have selected French Fries.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -250,15 +217,10 @@ float frenchfries()
     }
     else
     {total();}
-
-
-
-
 }
+
 float dessert()
 {
-
-
     printf("You have selected Dessert.");
     printf("\nPlease Enter your Quantity :");
     scanf("%d",&x);
@@ -274,15 +236,7 @@ float dessert()
     }
     else
     {total();}
-
-
-
-
-
-
 }
-
-
 
 float total()                                                           //Food Menu Calculations.
 {
@@ -302,15 +256,10 @@ float total()                                                           //Food M
     default: system("cls");
              printf("\n\nInvalid Error!\n");
     }
-
-
-
 }
 
 //This function is to calculate the total price of DINING IN including the 5% government tax and 10% dining in charges.
 float totaldinein()
-
-
 
 {
     system("cls");
@@ -336,11 +285,8 @@ float totaldinein()
     default: system("cls");
              printf("\nInvalid Error");
     }
-
-
-
-
 }
+
 //This function is to calculate the  total price of TAKE AWAY including the 5% government tax and 5% dining in charges.
 float totaltakeout()
 {
